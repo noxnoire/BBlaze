@@ -44,6 +44,8 @@ services:
     networks:
       - lavalink
       - mongodb-net
+    volumes:
+      - ./docker/app.yml:/main/bot/app.yml
     depends_on:
       - lavalink
       - mongodb
